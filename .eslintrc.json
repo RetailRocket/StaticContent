@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "es6": false
+    },
+    "plugins": ["jasmine"],
+    "extends": "eslint-config-airbnb-es5",
+    "rules": {
+        "no-trailing-spaces": "error",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": 0,
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": [ "error" ],
+        "func-names": ["off"],
+        "brace-style": ["error", "allman"],
+        "no-undefined": [ "error" ]
+    }
+}
+

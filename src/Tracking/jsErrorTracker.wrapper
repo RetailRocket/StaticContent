@@ -1,0 +1,17 @@
+﻿try {
+<%= contents %>
+}
+catch (exception) {
+    var errorModel = {
+        name: (exception.name || "").substring(0, 100),
+        message: (exception.message || "").substring(0, 500),
+        stack: (exception.stack || "").substring(0, 4000),
+        partnerId: window.rrPartnerId
+    };
+    if (XMLHttpRequest) {
+        var request = new XMLHttpRequest();
+        request.open('POST', 'https://tracking.retailrocket.net/javascripterrors', true);
+        request.setRequestHeader('Content-type','application/json');
+        request.send(JSON.stringify(errorModel));
+    }
+}

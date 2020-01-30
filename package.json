@@ -1,0 +1,49 @@
+{
+  "name": "retailrocket-web",
+  "version": "1.0.0",
+  "description": "RetailRocket.ru web",
+  "main": "index.js",
+  "scripts": {
+   "lint": "eslint \"./node_modules/.bin/eslint\" \"./src/**/*.js ./tests/**/*.js\" \"./jasmine.unit.tests/*.js\" \"./jasmine.integration.tests/*.js\""
+  },
+  "author": "retailrocket",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "unpublished"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-indent": "^1.0.1",
+    "gulp-jshint": "^1.12.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-wrap": "^0.14.0",
+    "gulp-zip": "^4.2.0",
+    "jasmine-core": "^2.99.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.3",
+    "karma-spec-reporter": "0.0.32",
+    "npm": "^6.9.0",
+    "run-sequence": "^1.2.2",
+    "yargs": "^6.6.0"
+  },
+  "dependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-airbnb-es5": "^1.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.7.1",
+    "jasmine": "^2.8.0",
+    "strip-bom": "^3.0.0"
+  }
+}
+
+   

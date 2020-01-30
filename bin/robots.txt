@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+Allow: /content/javascript/tracking.js
+Allow: /api/
+Allow: /content/css/retailrocket.widget.css
