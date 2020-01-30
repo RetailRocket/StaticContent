@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  tests:
+    image: altaxvt/jasmine-tests:latest
+    volumes:
+      - .:/src
+    working_dir: /src
+    command: >
+      bash -c "
+        export IP=127.0.0.1 &&
+        npm install &&
+        npm install gulp -g &&
+        gulp &&
+        gulp jsTests &&
+        jasmine ./jasmine.integration.tests/*.js &&
+        jasmine ./jasmine.unit.tests/*.js
+      "

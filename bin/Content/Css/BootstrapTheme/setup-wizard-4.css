@@ -1,0 +1,7 @@
+﻿.modal-body .alert:last-child {
+    margin-bottom: 0px !important;
+}
+
+.modal-footer {
+    margin-top: 0 !important;
+}
